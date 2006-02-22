@@ -1,0 +1,11 @@
+doc/models/.*
+doc/html/
+\.project
+.DS_Store
+mkhtmldoc.sh
+tmp$
+MANIFEST.SKIP
+old$
+bak$
+tar.gz$
+^Makefile$

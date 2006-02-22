@@ -1,0 +1,26 @@
+VLC version 1.1
+===============
+
+This module provides Perl interface to VideoLAN Client via remote Telnet.
+
+It's of basic functionality currently, but eventialy will evolve into full
+blown support of all VLM commands.
+
+The main target of this project is to create a library that will help creating
+web-based stream tv manipulation software.
+
+There are also some extensions that ease usage of core VLC modules. VLC::Helper
+package contains several modules and sub-packages that deals with parameter
+construction for core classes like output stream specification.
+
+INSTALLATION
+
+  % perl Makefile.PL
+  % make
+  % make install
+
+COPYRIGHT AND LEGAL
+
+Copyright (C) 2006 Valentin A. Alekseev. All rights reserved.
+
+Distribute under the terms of Apache License version 2.
