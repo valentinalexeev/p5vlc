@@ -132,6 +132,13 @@ sub option($$) {
   $self->setup("option $optionname") unless (defined $optionarg);
 }
 
+sub output($$) {
+  my ($self, $output) = @_;
+  return $self->{output} unless (defined $output);
+  $self->{output} = $output;
+  $self->setup("output '$output'");
+}
+
 1;
 __END__
 =head1 NAME
@@ -187,6 +194,10 @@ Get list of known inputs or add one to the end of input list.
 =item inputdel ( inputname )
 
 Remove given input from input list.
+
+=item output ( output )
+
+Set or check output for a media type.
 
 =item option ( [name [,value]] )
 
